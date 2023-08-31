@@ -15,11 +15,18 @@
 
         document.getElementById('campoA').value = '';
         document.getElementById('campoB').value = '';
+        
 
     } else {
         const containerMensagemSucesso = document.querySelector('.error-message');
         containerMensagemSucesso.innerHTML = mensagemError; 
         containerMensagemSucesso.style.display = 'block'; 
+
+        setTimeout(function() 
+        {
+            location.reload();
+        },3000)
+    
 
     }
 });
